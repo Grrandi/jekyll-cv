@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+  {% for post in site.posts %}
+  <div class="section">
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+  </div>
+  {% endfor%}
+

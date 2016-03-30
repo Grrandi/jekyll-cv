@@ -1,0 +1,44 @@
+.skills{
+  h4, h6 {
+    margin-bottom: 10px;
+  }
+  .skill {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    .skill-level {
+      height: 3px;
+      background-color: dimgrey;
+      .dot-position {
+        position: relative;
+        background-color: rebeccapurple;
+        height: 3px;
+        .dot {
+          font-size: 16px;
+          position: absolute;
+          right: 0;
+          margin-top: -7px;
+          margin-left: 50%;
+          &:hover {
+            cursor: default;
+          }
+        }
+      }
+      .beginner {
+        width: 10%;
+      }
+      .intermediate {
+        width: 30%;
+      }
+      .professional {
+        width: 50%;
+      }
+      .guru {
+        width: 80%;
+      }
+      .superstar {
+        width: 99%;
+      }
+    }
+
+  }
+}

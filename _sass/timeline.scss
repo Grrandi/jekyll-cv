@@ -1,0 +1,113 @@
+.timeline {
+  position: relative;
+
+  &:before {
+    background: #ededed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ededed 1%, #ededed 75%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ededed), color-stop(75%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ededed 1%,#ededed 75%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ededed 1%,#ededed 75%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    bottom: 0;
+    content: "";
+    left: 18px;
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height:100%;
+    margin-top: 25px;
+  }
+/*
+  &:after {
+    background: #ffffff;
+    border:3px solid #efefef;
+    font-family: 'FontAwesome';
+    top:0;
+    left:-5px;
+    width:50px;
+    height:50px;
+    position: absolute;
+    text-align:center;
+    color:#333333;
+    font-size:20px;
+    line-height:45px;
+  }
+
+  .experience:after {
+    content: '\f0f2';
+
+  }
+  .education:after {
+    content: '\e80c';
+  }
+*/
+}
+
+.exp{
+  padding-left: 50px;
+  padding-top: 20px;
+  position:relative;
+  margin-bottom:10px;
+}
+
+
+.exp:after{
+  background: mediumpurple;
+  border: 3px solid #ffffff;
+  content: "";
+  height: 15px;
+  left: 12px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  width: 15px;
+  border-radius: 12px;
+}
+
+
+.exp .exp-header h4, h6{
+  margin-bottom:0;
+}
+
+
+.exp .exp-header h4{
+  text-transform:none;
+
+}
+
+
+.exp .exp-header{
+  margin-bottom:5px;
+}
+
+
+.exp .exp-header h6{
+  text-transform:none;
+  font-size:12px;
+  color:#666666;
+
+}
+
+
+.exp .exp-header h6 i{
+  color:#cccccc;
+  margin-right:5px;
+}
+
+
+.exp .exp-header h6 span.current{
+  color:#ffffff;
+  background: #cd5353;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius :6px;
+  -ms-border-radius:6px;
+  -o-border-radius: 6px;
+  padding:1px 12px;
+}
+
+.margTop {
+  margin-top:60px;
+}

@@ -5,39 +5,15 @@
 
   <body>
     <div id="wrapper">
-
-      <div id="bar">
-        <div class="">
-          <div class="center">
-            <img class="site-image" src="http://placehold.it/350x350"/>
-          </div>
-
-
-          <div class="site-title">
-            <h1>
-              {{ site.title }}
-            </h1>
-            <p class="lead">{{ site.description }}</p>
-          </div>
-
-          <div class="icons">
-            {% if site.github_username %}
-            <a class="icon-link" target="_blank" title="Github" href="https://github.com/{{ site.github_username }}"><span class="fa fa-github"></span></a>
-            {% endif %}
-            {% if site.linkedin_url %}
-            <a class="icon-link" target="_blank" title="LinkedIn" href="{{ site.linkedin_url }}"><span class="fa fa-linkedin"></span></a>
-            {% endif %}
-            {% if site.twitter_handle %}
-            <a class="icon-link" target="_blank" title="Twitter" href="https://twitter.com/{{ site.twitter_handle }}"><span class="fa fa-twitter"></span></a>
-            {% endif %}
-          </div>
-
-
-        </div>
-      </div>
+      {% include sidebar.html %}
       <div id="content-wrapper">
         <div class="container-fluid content-core">
-          {{ content }}
+          {% include intro.html name=site.name title=site.title abstract=site.abstract %}
+          <div class="row">
+            {% include experience.html %}
+            {% include education.html %}
+          </div>
+          {% include skills.html %}
         </div>
       </div>
     </div>

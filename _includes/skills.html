@@ -1,0 +1,22 @@
+<div class="">
+    <div class="skills">
+        <div class="section-title">
+            <h3>Skills</h3>
+        </div>
+        {% for post in site.posts %}
+            {% if post.category == "skill" %}
+                <div class="skill">
+                    <h6 class="skill-title">{{ post.name }} - {{ post.level }}</h6>
+                    <div class="skill-level">
+                        <div class="dot-position {{ post.level }}">
+                            <i class="dot fa fa-circle"></i>
+                        </div>
+                    </div>
+                    <div class="skill-description">
+                        {{ post.content }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor%}
+    </div>
+</div>

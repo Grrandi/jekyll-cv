@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 26rem;
+    width: 30rem;
     text-align: left;
   }
   .site-image {
@@ -73,16 +73,16 @@
 /* 768px */
 @media (min-width: 48em) {
   #content-wrapper {
-    margin-left: 26rem;
+    margin-left: 30rem;
   }
 }
 /* 992px */
 @media (min-width: 62em) {
   #bar {
-    width: 30rem;
+    width: 34rem;
   }
   #content-wrapper {
-    margin-left: 30rem;
+    margin-left: 34rem;
     max-width: 90rem;
   }
 }

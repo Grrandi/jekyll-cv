@@ -1,3 +1,4 @@
+// Theme colors from https://github.com/chriskempson/base16
 
 @mixin theme ($theme-bar-bg, $theme-content-bg, $theme-color, $theme-accent) {
   $theme-a: $theme-accent;
@@ -14,6 +15,7 @@
     }
   }
   #content-wrapper {
+    color: $theme-bar-bg;
     background-color: $theme-content-bg;
     .exp {
       &:after {
@@ -58,8 +60,17 @@
   }
 }
 
-//Default
-.theme-default {
+//Default Red
+.theme-default-red {
+  $theme-default-bar-bg: #151515; // 00
+  $theme-default-content-bg: #F5F5F5; // 07
+  $theme-default-color: #B0B0B0; // 04
+  $theme-default-accent: #AC4142; // 08
+  @include theme($theme-default-bar-bg, $theme-default-content-bg, $theme-default-color, $theme-default-accent)
+}
+
+//Default Orange
+.theme-default-orange {
   $theme-default-bar-bg: #151515; // 00
   $theme-default-content-bg: #F5F5F5; // 07
   $theme-default-color: #B0B0B0; // 04
@@ -68,11 +79,137 @@
   
 }
 
-//Twilight
-.theme-twilight {
+//Default Green
+.theme-default-green {
+  $theme-default-bar-bg: #151515; // 00
+  $theme-default-content-bg: #F5F5F5; // 07
+  $theme-default-color: #B0B0B0; // 04
+  $theme-default-accent: #90A959; // 0B
+  @include theme($theme-default-bar-bg, $theme-default-content-bg, $theme-default-color, $theme-default-accent)
+}
+
+//Default Blue
+.theme-default-blue {
+  $theme-default-bar-bg: #151515; // 00
+  $theme-default-content-bg: #F5F5F5; // 07
+  $theme-default-color: #B0B0B0; // 04
+  $theme-default-accent: #6A9FB5; // 0D
+  @include theme($theme-default-bar-bg, $theme-default-content-bg, $theme-default-color, $theme-default-accent)
+
+}
+
+//Twilight Red
+.theme-twilight-red {
+  $theme-twilight-bar-bg: #1E1E1E; // 00
+  $theme-twilight-content-bg: #FFF; // 07
+  $theme-twilight-color: #838184; // 04
+  $theme-twilight-accent: #F92672; // 08
+  @include theme($theme-twilight-bar-bg, $theme-twilight-content-bg, $theme-twilight-color, $theme-twilight-accent)
+}
+
+//Twilight Orange
+.theme-twilight-orange {
   $theme-twilight-bar-bg: #1E1E1E; // 00
   $theme-twilight-content-bg: #FFF; // 07
   $theme-twilight-color: #838184; // 04
   $theme-twilight-accent: #CDA869; // 09
   @include theme($theme-twilight-bar-bg, $theme-twilight-content-bg, $theme-twilight-color, $theme-twilight-accent)
+}
+
+//Twilight Green
+.theme-twilight-green {
+  $theme-twilight-bar-bg: #1E1E1E; // 00
+  $theme-twilight-content-bg: #FFF; // 07
+  $theme-twilight-color: #838184; // 04
+  $theme-twilight-accent: #A6E22E; // 0B
+  @include theme($theme-twilight-bar-bg, $theme-twilight-content-bg, $theme-twilight-color, $theme-twilight-accent)
+}
+
+//Twilight Blue
+.theme-twilight-blue {
+  $theme-twilight-bar-bg: #1E1E1E; // 00
+  $theme-twilight-content-bg: #FFF; // 07
+  $theme-twilight-color: #838184; // 04
+  $theme-twilight-accent: #66D9EF; // 0D
+  @include theme($theme-twilight-bar-bg, $theme-twilight-content-bg, $theme-twilight-color, $theme-twilight-accent)
+}
+
+// Atelier Sulphurpool Red
+.theme-sulphur-red {
+  $theme-sulphur-bar-bg: #202746; // 00
+  $theme-sulphur-content-bg: #F5F7FF; // 07
+  $theme-sulphur-color: #898EA4; // 04
+  $theme-sulphur-accent: #C94922; // 08
+  @include theme($theme-sulphur-bar-bg, $theme-sulphur-content-bg, $theme-sulphur-color, $theme-sulphur-accent)
+}
+
+// Atelier Sulphurpool Orange
+.theme-sulphur-orange {
+  $theme-sulphur-bar-bg: #202746; // 00
+  $theme-sulphur-content-bg: #F5F7FF; // 07
+  $theme-sulphur-color: #898EA4; // 04
+  $theme-sulphur-accent: #C76B29; // 09
+  @include theme($theme-sulphur-bar-bg, $theme-sulphur-content-bg, $theme-sulphur-color, $theme-sulphur-accent)
+}
+
+// Atelier Sulphurpool Green
+.theme-sulphur-green {
+  $theme-sulphur-bar-bg: #202746; // 00
+  $theme-sulphur-content-bg: #F5F7FF; // 07
+  $theme-sulphur-color: #898EA4; // 04
+  $theme-sulphur-accent: #AC9739; // 0B
+}
+
+// Atelier Sulphurpool Blue
+.theme-sulphur-blue {
+  $theme-sulphur-bar-bg: #202746; // 00
+  $theme-sulphur-content-bg: #F5F7FF; // 07
+  $theme-sulphur-color: #898EA4; // 04
+  $theme-sulphur-accent: #3D8FD1; // 0D
+  @include theme($theme-sulphur-bar-bg, $theme-sulphur-content-bg, $theme-sulphur-color, $theme-sulphur-accent)
+}
+
+// Greyscale
+.theme-greyscale {
+  $theme-greyscale-bar-bg: #101010; // 00
+  $theme-greyscale-content-bg: #F7F7F7; // 07
+  $theme-greyscale-color: #ABABAB; // 04
+  $theme-greyscale-accent: #999; // 09
+  @include theme($theme-greyscale-bar-bg, $theme-greyscale-content-bg, $theme-greyscale-color, $theme-greyscale-accent)
+}
+
+// Ocean Red
+.theme-ocean-red {
+  $theme-ocean-bar-bg: #2B303B; // 00
+  $theme-ocean-content-bg: #EFF1F5; // 07
+  $theme-ocean-color: #A7ADBA; // 04
+  $theme-ocean-accent: #BF616A; // 08
+  @include theme($theme-ocean-bar-bg, $theme-ocean-content-bg, $theme-ocean-color, $theme-ocean-accent)
+}
+
+// Ocean Orange
+.theme-ocean-orange {
+  $theme-ocean-bar-bg: #2B303B; // 00
+  $theme-ocean-content-bg: #EFF1F5; // 07
+  $theme-ocean-color: #A7ADBA; // 04
+  $theme-ocean-accent: #D08770; // 09
+  @include theme($theme-ocean-bar-bg, $theme-ocean-content-bg, $theme-ocean-color, $theme-ocean-accent)
+}
+
+// Ocean Green
+.theme-ocean-green {
+  $theme-ocean-bar-bg: #2B303B; // 00
+  $theme-ocean-content-bg: #EFF1F5; // 07
+  $theme-ocean-color: #A7ADBA; // 04
+  $theme-ocean-accent: #A3BE8C; // 0B
+  @include theme($theme-ocean-bar-bg, $theme-ocean-content-bg, $theme-ocean-color, $theme-ocean-accent)
+}
+
+// Ocean Blue
+.theme-ocean-blue {
+  $theme-ocean-bar-bg: #2B303B; // 00
+  $theme-ocean-content-bg: #EFF1F5; // 07
+  $theme-ocean-color: #A7ADBA; // 04
+  $theme-ocean-accent: #8FA1B3; // 0D
+  @include theme($theme-ocean-bar-bg, $theme-ocean-content-bg, $theme-ocean-color, $theme-ocean-accent)
 }

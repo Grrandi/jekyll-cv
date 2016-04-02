@@ -1,0 +1,63 @@
+$theme-1-bar-bg: #151515;
+$theme-1-content-bg: #F5F5F5;
+$theme-1-color: #B0B0B0;
+$theme-1-accent: #D28445;
+$theme-1-a: $theme-1-accent;
+$theme-1-a-hover: darken($theme-1-a, 20%);
+
+//Eighties
+.theme-1 {
+  #bar {
+    background-color: $theme-1-bar-bg;
+    color: $theme-1-color;
+    a {
+      color: $theme-1-a;
+      &:hover {
+        color: $theme-1-a-hover
+      }
+    }
+  }
+  #content-wrapper {
+    background-color: $theme-1-content-bg;
+    .exp {
+      &:after {
+        background: $theme-1-accent;
+        border: 3px solid $theme-1-content-bg;
+      }
+      h6 {
+        color: darken($theme-1-color, 30%);
+      }
+    }
+    .skills {
+      .dot {
+        color: $theme-1-accent;
+      }
+      .skill-level {
+        background-color: $theme-1-color;
+        .dot-position {
+          background-color: $theme-1-accent;
+        }
+      }
+    }
+    .project {
+      a {
+        color: $theme-1-a;
+        &:hover {
+          color: $theme-1-a-hover;
+        }
+      }
+    }
+    .timeline {
+      &:before {
+        background: $theme-1-color; /* Old browsers */
+        background: -moz-linear-gradient(top,  $theme-1-color 1%, $theme-1-color 75%, $theme-1-content-bg 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,$theme-1-color), color-stop(75%,$theme-1-color), color-stop(100%,$theme-1-content-bg)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-1-color', endColorstr='$theme-1-content-bg',GradientType=0 ); /* IE6-9 */
+      }
+    }
+  }
+}

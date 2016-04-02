@@ -3,6 +3,7 @@
 
 @import "timeline";
 @import "skills";
+@import "themes";
 .content-core {
   padding: 4rem;
 }
@@ -13,34 +14,29 @@
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
-}
-
-.site-image {
-  width: 180px;
-  height: 180px;
-  -webkit-border-radius: 160px;
-  -moz-border-radius: 160px;
-  border-radius: 160px;
-}
-
-.site-title {
-  position: relative;
-  text-align: center;
-}
-
-
-.icons {
-  text-align: center;
-
-}
-.icon-link {
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 3rem;
-  outline: none;
-}
-.icon-link:focus, .icon-link:hover, .icon-link:active {
-  outline: none;
+  .site-image {
+    width: 180px;
+    height: 180px;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    border-radius: 160px;
+  }
+  .site-title {
+    position: relative;
+    text-align: center;
+  }
+  .icons {
+    text-align: center;
+  }
+  .icon-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 3rem;
+    outline: none;
+  }
+  .icon-link:focus, .icon-link:hover, .icon-link:active {
+    outline: none;
+  }
 }
 
 /* 768px */
@@ -52,30 +48,26 @@
     bottom: 0;
     width: 30rem;
     text-align: left;
+    .site-image {
+      margin: 0 auto;
+      width: 180px;
+      height: 180px;
+      -webkit-border-radius: 160px;
+      -moz-border-radius: 160px;
+      border-radius: 160px;
+      display: inline-block;
+    }
+    .center {
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
   }
-  .site-image {
-    margin: 0 auto;
-    width: 180px;
-    height: 180px;
-    -webkit-border-radius: 160px;
-    -moz-border-radius: 160px;
-    border-radius: 160px;
-    display: inline-block;
-  }
-  .center {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-  }
-
-
-}
-/* 768px */
-@media (min-width: 48em) {
   #content-wrapper {
     margin-left: 30rem;
   }
 }
+
 /* 992px */
 @media (min-width: 62em) {
   #bar {

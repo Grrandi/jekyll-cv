@@ -14,9 +14,11 @@
       }
     }
   }
+  #wrapper {
+    background-color: $theme-content-bg;
+  }
   #content-wrapper {
     color: $theme-bar-bg;
-    background-color: $theme-content-bg;
     .exp {
       &:after {
         background: $theme-accent;

@@ -18,4 +18,8 @@ Jekyll template for a simple cover page / unofficial cv
 
 `make dist` runs `git subtree push --prefix dist origin gh-pages` to publish your generated site under `_site` folder to gh-pages.
 
+### Licence
+
+MIT
+
 

@@ -14,8 +14,6 @@ abstract: > # Here you should write a brief summary about yourself in profession
 description: > # Description for the site
   Personal cover page for this test user.
 theme: theme-ocean-orange
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  foobarbizbuzhopefullynotrealuser
 linkedin_url: https://linkedin.com/profile/sample
 twitter_handle:

@@ -3,3 +3,6 @@
 .idea
 .editorconfig
 _site/Makefile
+_site/README.md
+_site/LICENCE.md
+_site/.gitignore

@@ -1,63 +1,78 @@
-$theme-1-bar-bg: #151515;
-$theme-1-content-bg: #F5F5F5;
-$theme-1-color: #B0B0B0;
-$theme-1-accent: #D28445;
-$theme-1-a: $theme-1-accent;
-$theme-1-a-hover: darken($theme-1-a, 20%);
 
-//Eighties
-.theme-1 {
+@mixin theme ($theme-bar-bg, $theme-content-bg, $theme-color, $theme-accent) {
+  $theme-a: $theme-accent;
+  $theme-a-hover: darken($theme-a, 20%);
+  
   #bar {
-    background-color: $theme-1-bar-bg;
-    color: $theme-1-color;
+    background-color: $theme-bar-bg;
+    color: $theme-color;
     a {
-      color: $theme-1-a;
+      color: $theme-a;
       &:hover {
-        color: $theme-1-a-hover
+        color: $theme-a-hover
       }
     }
   }
   #content-wrapper {
-    background-color: $theme-1-content-bg;
+    background-color: $theme-content-bg;
     .exp {
       &:after {
-        background: $theme-1-accent;
-        border: 3px solid $theme-1-content-bg;
+        background: $theme-accent;
+        border: 3px solid $theme-content-bg;
       }
       h6 {
-        color: darken($theme-1-color, 30%);
+        color: darken($theme-color, 30%);
       }
     }
     .skills {
       .dot {
-        color: $theme-1-accent;
+        color: $theme-accent;
       }
       .skill-level {
-        background-color: $theme-1-color;
+        background-color: $theme-color;
         .dot-position {
-          background-color: $theme-1-accent;
+          background-color: $theme-accent;
         }
       }
     }
     .project {
       a {
-        color: $theme-1-a;
+        color: $theme-a;
         &:hover {
-          color: $theme-1-a-hover;
+          color: $theme-a-hover;
         }
       }
     }
     .timeline {
       &:before {
-        background: $theme-1-color; /* Old browsers */
-        background: -moz-linear-gradient(top,  $theme-1-color 1%, $theme-1-color 75%, $theme-1-content-bg 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,$theme-1-color), color-stop(75%,$theme-1-color), color-stop(100%,$theme-1-content-bg)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  $theme-1-color 1%,$theme-1-color 75%,$theme-1-content-bg 100%); /* W3C */
+        background: $theme-color; /* Old browsers */
+        background: -moz-linear-gradient(top,  $theme-color 1%, $theme-color 75%, $theme-content-bg 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, $theme-color), color-stop(75%, $theme-color), color-stop(100%, $theme-content-bg)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $theme-color 1%, $theme-color 75%, $theme-content-bg 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $theme-color 1%, $theme-color 75%, $theme-content-bg 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $theme-color 1%, $theme-color 75%, $theme-content-bg 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  $theme-color 1%, $theme-color 75%, $theme-content-bg 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-1-color', endColorstr='$theme-1-content-bg',GradientType=0 ); /* IE6-9 */
       }
     }
   }
+}
+
+//Default
+.theme-default {
+  $theme-default-bar-bg: #151515; // 00
+  $theme-default-content-bg: #F5F5F5; // 07
+  $theme-default-color: #B0B0B0; // 04
+  $theme-default-accent: #D28445; // 09
+  @include theme($theme-default-bar-bg, $theme-default-content-bg, $theme-default-color, $theme-default-accent)
+  
+}
+
+//Twilight
+.theme-twilight {
+  $theme-twilight-bar-bg: #1E1E1E; // 00
+  $theme-twilight-content-bg: #FFF; // 07
+  $theme-twilight-color: #838184; // 04
+  $theme-twilight-accent: #CDA869; // 09
+  @include theme($theme-twilight-bar-bg, $theme-twilight-content-bg, $theme-twilight-color, $theme-twilight-accent)
 }

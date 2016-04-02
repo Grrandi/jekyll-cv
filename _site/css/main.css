@@ -87,6 +87,8 @@
         margin-left: 50%; }
         .skills .skill .skill-level .dot-position .dot:hover {
           cursor: default; }
+  .skills .skill .skill-description {
+    margin-top: 4px; }
 
 .theme-default-red #bar {
   background-color: #151515;

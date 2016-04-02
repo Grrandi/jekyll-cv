@@ -17,6 +17,7 @@ theme: theme-ocean-orange
 github_username:  foobarbizbuzhopefullynotrealuser
 linkedin_url: https://linkedin.com/profile/sample
 twitter_handle:
+baseurl: stunning-pancake
 
 # Build settings
 markdown: kramdown

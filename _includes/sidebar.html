@@ -9,6 +9,13 @@
       </h1>
       <p class="description">{{ site.description }}</p>
     </div>
+
+    <div class="contact-info center">
+      <p><strong>Email: </strong><a href="mailto:{{ site.email }}">{{ site.email }}</a> </p>
+      <p><strong>Phone: </strong>{{ site.phone }}</p>
+      <p><strong>Date of birth: </strong>{{ site.dob }} </p>
+      <p><strong>Address: </strong>{{ site.address }} </p>
+    </div>
     <div class="icons">
       {% if site.github_username %}
       <a class="icon-link" target="_blank" title="Github" href="https://github.com/{{ site.github_username }}"><span class="fa fa-github"></span></a>

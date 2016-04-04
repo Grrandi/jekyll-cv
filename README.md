@@ -15,7 +15,7 @@ Jekyll template for a simple cover page / unofficial cv
 
 `make serve` runs jekyll serve -w command that enables live reload on editing the content
 
-`make dist` runs `git subtree push --prefix dist origin gh-pages` to publish your generated site under `_site` folder to gh-pages.
+`make dist` runs `git subtree push --prefix _site origin gh-pages` to publish your generated site under `_site` folder to gh-pages.
 
 ### Themes
 

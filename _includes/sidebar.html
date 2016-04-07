@@ -1,20 +1,29 @@
 <div id="bar">
   <div class="barbar">
+    {% if site.image %}
     <div class="center">
-      <img class="site-image" src="http://placehold.it/350x350"/>
+      <img class="site-image" src="{{ site.image }}"/>
     </div>
+    {% endif %}
     <div class="site-title">
       <h1>
         {{ site.name }}
       </h1>
       <p class="description">{{ site.description }}</p>
     </div>
-
     <div class="contact-info center">
+      {% if site.email %}
       <p><strong>Email: </strong><a href="mailto:{{ site.email }}" title="{{ site.email }}">{{ site.email }}</a> </p>
+      {% endif%}
+      {% if site.phone %}
       <p><strong>Phone: </strong>{{ site.phone }}</p>
+      {% endif%}
+      {% if site.dob %}
       <p><strong>Date of birth: </strong>{{ site.dob }} </p>
+      {% endif%}
+      {% if site.address %}
       <p><strong>Address: </strong>{{ site.address }} </p>
+      {% endif%}
     </div>
     <div class="icons">
       {% if site.github_username %}

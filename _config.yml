@@ -14,6 +14,7 @@ email: user.userino@example.com # Your email
 address: User street 123, 50123 Userville, Userlandia # Your address
 phone: 555-not-a-real-number # Your phone number
 dob: 12.12.2012 # Your date of birth
+image: http://placehold.it/350x350
 title: Awesomeness Expert # Your title eg. Writer, programmer, welder, etc.
 github_username:  foobarbizbuzhopefullynotrealuser # Your github username
 linkedin_url: https://linkedin.com/profile/sample # Your linkedin public url

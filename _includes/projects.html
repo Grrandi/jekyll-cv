@@ -11,9 +11,11 @@
                             <div class="project-header">
                                 <h4>
                                     {{ post.name }}
+                                    {% if post.repo %}
                                     <a href="{{ post.repo_url }}" target="_blank" title="{{ post.repo }}">
                                         <i class=" fa fa-{{ post.repo }}"></i>
                                     </a>
+                                    {% endif %}
                                 </h4>
                                 <p>
                                     {{ post.content }}

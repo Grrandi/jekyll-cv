@@ -86,7 +86,7 @@
 @media print {
 
   body {
-    font: 12pt Georgia, "Times New Roman", Times, serif;
+    font: 11pt Georgia, "Times New Roman", Times, serif;
     line-height: 1.3;
   }
 
@@ -98,11 +98,20 @@
     }
   }
   .content-core {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: unset !important;
+    padding-right: unset !important;
+
+    .col-experience, .col-skills {
+      float: left;
+    }
+    .col-education, .col-languages {
+      float: right;
+    }
     .col-experience, .col-education, .col-skills, .col-languages {
-      max-width: 45%;
+      max-width: 50%;
+
       .exp {
+        page-break-inside: avoid;
         padding-left: unset !important;
         padding-top: unset !important;
         padding-bottom: 20px;
@@ -111,9 +120,22 @@
           border: unset !important;
         }
       }
+      .skills {
+        page-break-inside: avoid;
+      }
       .skill-level {
         display: none;
       }
+    }
+    .projects-wrapper {
+      max-width: 49%;
+      margin-right: 1%;
+      float: left;
+    }
+    .hobbies-wrapper {
+      max-width: 49%;
+      margin-left: 1%;
+      float: right;
     }
   }
   #bar {

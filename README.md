@@ -34,6 +34,10 @@ I sometimes have trouble pronouncing squirrel.
 
 Posts are ordered by category _AND_ by file name. Jekyll posts follow the naming format of `YYYY-MM-DD-{unique-name}.md`, sorting newest date to the top. So if you have three nodes in your work history you will want the latest to be closes to the current date and the oldest to be the furthest. Actual date in the post names doesn't matter at all, just the order. 
 
+#### Localization
+
+In the `_config.yml` file you can change section header texts to your suiting.
+
 #### Sidebar
 
 Sidebar is for showing business card like information about yourself.

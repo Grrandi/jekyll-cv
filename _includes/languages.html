@@ -6,7 +6,10 @@
         {% for post in site.posts %}
             {% if post.category == "language" %}
                 <div class="skill">
-                    <h6 class="skill-title">{{ post.name }} - {{ post.level }}</h6>
+                    <h6 class="skill-title">
+                        <i class="fa fa-flag"></i>
+                        {{ post.name }} - {{ post.level }}
+                    </h6>
                     <div class="skill-level">
                         <div class="dot-position" style="width: {{ post.value }}">
                             <i class="dot fa fa-circle"></i>

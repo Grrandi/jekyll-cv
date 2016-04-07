@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-md-6 col-languages">
     <div class="skills">
         <div class="section-title">
-            <h3>Languages</h3>
+            <h3>{{ site.languages }}</h3>
         </div>
         {% for post in site.posts %}
             {% if post.category == "language" %}

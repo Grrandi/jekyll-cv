@@ -26,6 +26,18 @@ description: > # Description for the site
   Personal cover page for this test user.
 theme: theme-ocean-orange # Color theme for the site.
 
+# Localization
+projects: Personal projects
+skills: Skills
+languages: Language
+hobbies: Hobbies
+experience: Experience
+education: Education
+email_text: Email
+phone_text: Phone
+dob_text: Date of birth
+address_text: Address
+
 baseurl: ""
 
 # Build settings

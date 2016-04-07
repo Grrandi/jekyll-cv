@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-md-6 col-skills">
     <div class="skills">
         <div class="section-title">
-            <h3>Skills</h3>
+            <h3>{{ site.skills }}</h3>
         </div>
         {% for post in site.posts %}
             {% if post.category == "skill" %}

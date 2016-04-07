@@ -13,16 +13,16 @@
     </div>
     <div class="contact-info center">
       {% if site.email %}
-      <p><strong>Email: </strong><a href="mailto:{{ site.email }}" title="{{ site.email }}">{{ site.email }}</a> </p>
+      <p><strong>{{ site.email_text}}: </strong><a href="mailto:{{ site.email }}" title="{{ site.email }}">{{ site.email }}</a> </p>
       {% endif%}
       {% if site.phone %}
-      <p><strong>Phone: </strong>{{ site.phone }}</p>
+      <p><strong>{{ site.phone_text }}: </strong>{{ site.phone }}</p>
       {% endif%}
       {% if site.dob %}
-      <p><strong>Date of birth: </strong>{{ site.dob }} </p>
+      <p><strong>{{ site.dob_text}}: </strong>{{ site.dob }} </p>
       {% endif%}
       {% if site.address %}
-      <p><strong>Address: </strong>{{ site.address }} </p>
+      <p><strong>{{site.address_text}}: </strong>{{ site.address }} </p>
       {% endif%}
     </div>
     <div class="icons">
